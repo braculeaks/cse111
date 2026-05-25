@@ -1,4 +1,4 @@
-public class Triangle {
+public class Triangle {         /* a4q1 */
     int a, b, c;
     int peri;
 

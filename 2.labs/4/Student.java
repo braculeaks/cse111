@@ -1,4 +1,4 @@
-public class Student {
+public class Student {                  /* a4q3 */
     public  String name  = null;
     public  String email = null;
     private String pass  = null;

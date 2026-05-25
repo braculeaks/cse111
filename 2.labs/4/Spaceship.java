@@ -1,4 +1,4 @@
-public class Spaceship {
+public class Spaceship {                /* a4q4 */
     String name;
     String cargo;
     int cap;

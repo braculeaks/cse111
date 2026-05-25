@@ -13,15 +13,15 @@
 
 ### TODO:
 - Upload Videos that are not on youtube
-- Update MAU Quiz Spring2026: https://docs.google.com/document/d/1aC9ft1vJq7YP-Kjb02v1Y1JhTSQUxtTazwrt5Ly5tgg/edit?tab=t.dzvg9v8wwbjq
 
 ### Recommendation
-0. Take TAW > AVB > MAU > SLAR > ADU > RKBM > ANK > AFA
-1. Watch KNI: https://youtu.be/playlist?list=PLR0j6NckpKjyNO579D4P4qCGBSlY8Ous5
+0. Take TAW > AVB > MAU > SLAR > AFA > AIB > ADU > RKBM > QUZA > ANK 
+1. Watch TAW: https://youtu.be/playlist?list=PLR0j6NckpKjyNO579D4P4qCGBSlY8Ous5
 2. Watch BuX / TAW: https://youtu.be/playlist?list=PLvr0Ht-XkB_3QPWYBje6NqEs3QLj_0vpf
 3. Don't Miss Classes.
     - Even if you do, Try solving the problems shown in class. Check Resources/Problems
 4. Don't Miss Labs
+    - Even if you do, solve all the problems from that week's Assignment 
 5. Solve LabTasks/Assignments untill you start feeling confident
 
 ### Topic List
@@ -38,7 +38,7 @@ week 08 - t, static
 week 09 - inheritence
 week 10 - t, overriding
 week 11 - t, polymorphism
-week 12 - abstract class
+week 12 - abstract class (✖️ can't happen, ran outta time)
 week 13 - finals
 
 t = tracing
@@ -66,7 +66,7 @@ apr 22 - L15: quiz 3 + Inheritence
 apr 27 - L16: Polymorphism
 apr 29 - L17: quiz 4 (cancelled) + Polymorphism
 may 04 - L18: quiz 4
-may 06 - L19: quiz 5
+may 06 - L19: quiz 5 (last class)
 ```
 
 ### Labs
@@ -92,9 +92,13 @@ may 12 - Lab9: cant happen, ran outta time ✖️
 - Books: https://drive.google.com/drive/folders/1XbLzDkrjR1nzO5CErs9RkuA94sIn01be
 - BuX / TAW: https://www.youtube.com/playlist?list=PLvr0Ht-XkB_3QPWYBje6NqEs3QLj_0vpf
 - TAW & KNI sp26: https://www.youtube.com/playlist?list=PLR0j6NckpKjyNO579D4P4qCGBSlY8Ous5
-- KNI: 
-    - cse111 tracing: https://www.youtube.com/playlist?list=PLr4zrTlldjgo4fN9fRZB65xcJgyVC7B11
-- RAK: https://www.youtube.com/playlist?list=PLkqsZdV3LRJTuZRThm0UzJzCcytnQmyRY
+    - KNI: 
+        - cse111 tracing: https://www.youtube.com/playlist?list=PLr4zrTlldjgo4fN9fRZB65xcJgyVC7B11
+    - RAK: https://www.youtube.com/playlist?list=PLkqsZdV3LRJTuZRThm0UzJzCcytnQmyRY
+- Extra Resources:
+    - Java Code Visualizer provided by MAU
+        - https://cscircles.cemc.uwaterloo.ca/java_visualize/
+        - https://pythontutor.com/java.html#mode=edit
 - Python Slides + Official Notes: https://github.com/mebmrauf/CSE111-Programming-Language-II
 
 ### Spring 2026
@@ -104,8 +108,6 @@ may 12 - Lab9: cant happen, ran outta time ✖️
     - Section 09 [KNI] : 
         - Resources:         https://drive.google.com/drive/u/8/folders/1EAZ9PIl98P7VCJSgh8npordykKY4ZxQl
         - Recorded Lectures: https://docs.google.com/document/d/1qtPJfq32K8SyUS0FoTBEwGMxfpZCqNvLbLAwEX72H3M
-            - Download on Semester end
-            - Download KNI ClassCodes on SemesterEnd
     - Section 10 [AIB] : https://drive.google.com/drive/folders/1mDNrEafrcDDYqeWkYn_VEXp87W0EVfZE
     - Section 11 [AIB] : https://drive.google.com/drive/folders/1mDNrEafrcDDYqeWkYn_VEXp87W0EVfZE
         - Update ClassCodes
@@ -128,10 +130,10 @@ may 12 - Lab9: cant happen, ran outta time ✖️
 
 ### Spring 2026 - MarkSheets
 - Section 01: [AIB] https://isaamrat.github.io/cse111-lab-marks/
-- Section 02: Not Found  | Faculty: TAW, AOH
+- Section 02: [TAW][AOH]  https://docs.google.com/spreadsheets/d/18RVsyYAFlaJM0fiHtPamLxTk_y5POgZp2xtAC1T2HsI/edit?gid=0#gid=0
 - Section 03: Not Public | Faculty: CAKM, HBN
-- Section 04: Not Found  | Faculty: TAW, RKBM
-- Section 05: Not Found  | Faculty: HBN, AOH
+- Section 04: [TAW][RKBM] https://docs.google.com/spreadsheets/d/1vLI7OGrsaNBgXVx3ejQJ2IZ9ogMAQyhaCR9Ql3BNgsk/edit?gid=0#gid=0
+- Section 05: [HBN][AOH]  https://docs.google.com/spreadsheets/d/1ja77Xt1Y6fxdoL5pSZSceS2wqN1LxbFymPNyH0iMEYg/edit?gid=0#gid=0
 - Section 06: [AVB]  https://docs.google.com/spreadsheets/d/13fpUuMfZIjsJ59rmL7vchyGAUalwYTOjBHbInCheexQ
 - Section 07: [CRHB] https://docs.google.com/spreadsheets/d/1SPl46l3cIYx1_qrrUnUkZSGhOrW9SUwscKmABOPnmOM
 - Section 08: Not Public | Faculty: TMD, ADU

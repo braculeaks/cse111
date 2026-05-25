@@ -1,4 +1,4 @@
-public class Player {
+public class Player {       /* a4q2 */
     String name;
     int HP;
     String def[] = new String[5];

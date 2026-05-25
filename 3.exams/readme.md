@@ -1,2 +1,2 @@
 - Summer2025 Stuffs - Courtesy of https://github.com/MOO-ORG/CSE111
-- Fall2025 Stuffs - Courtesy of https://github.com/Tanzeebul-Tamim/CSE111-Summer-Fall-2024
+- Fall2024 Stuffs - Courtesy of https://github.com/Tanzeebul-Tamim/CSE111-Summer-Fall-2024

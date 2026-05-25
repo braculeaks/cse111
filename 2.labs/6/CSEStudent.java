@@ -1,7 +1,7 @@
 public class CSEStudent extends Student         /* a6q5 */
 {
     static int total = 0;
-    static String courses[] = {"CSE110", "CSE111", "CSE220", "CSE221"};
+    static String list[] = {"CSE110", "CSE111", "CSE220", "CSE221"};
 
     static void details() {
         System.out.println("Total CSE Students: " + total);
@@ -10,8 +10,8 @@ public class CSEStudent extends Student         /* a6q5 */
     }
 
     int find(String c) {
-        for (int i = 0; i < courses.length; i++) {
-            if (c.equals(courses[i])) {
+        for (int i = 0; i < list.length; i++) {
+            if (c.equals(list[i])) {
                 return i;
             }
         }
