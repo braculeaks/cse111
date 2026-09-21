@@ -1,0 +1,141 @@
+// CSE111, Section 16 [MAU]
+// Amitrakshar Biswas (1000058970)
+
+// Assignment 2
+// Due March 03
+
+
+
+// Question 1
+public class ImaginaryNumber {          /* a2q1 */
+    public int realPart = 0;
+    public int imaginaryPart = 0;
+
+    public String printNumber() {
+        return "" + realPart +  " + " + imaginaryPart + "i";
+    }
+}
+
+
+
+
+
+
+// Question 2
+public class Assignment {               /* a2q2 */
+    public int tasks = 0;
+    public String difficulty = null;
+    public boolean submission = false;
+
+    public void printDetails() {
+        System.out.println("Number of tasks: " + tasks);
+        System.out.println("Difficulty level: " + difficulty);
+        System.out.println("Submission required: " + submission);
+    }
+
+    public String makeOptional() {
+        if (submission == false) {
+            return "Submission is already not required";
+        }
+        else {
+            submission = false;
+            return "Assignment will not require submission";
+        }
+    }
+}
+
+
+
+
+
+
+
+
+// Question 3
+public class Employee {         /* a2q3 */
+    public String name = null;
+    public String designation = null;
+    public double salary = 0.0;
+
+    public void newEmployee(String pName) {
+        this.name = pName;
+        this.designation = "junior";
+        this.salary = 30*1000;
+    }
+
+    public void displayInfo() {
+        System.out.println("Employee Name: " + name);
+        System.out.println("Employee Salary: " + salary + " Tk");
+        System.out.println("Employee Designation: " + designation);
+    }
+
+    public void calculateTax() {
+             if (salary > 50*1000)  System.out.println(name + " Tax Amount: " + salary*0.3 + " Tk");
+        else if (salary > 30*1000)  System.out.println(name + " Tax Amount: " + salary*0.1 + " Tk");
+        else                        System.out.println("No need to pay tax");
+    }
+
+    public void promoteEmployee(String pDesignation) {
+        this.designation = pDesignation;
+    
+             if (pDesignation.equals("senior"))     this.salary = 30*1000 + 25*1000;
+        else if (pDesignation.equals("lead"))       this.salary = 30*1000 + 50*1000;
+        else if (pDesignation.equals("manager"))    this.salary = 30*1000 + 75*1000;
+
+        System.out.println(name + " has been promoted to " + designation);
+        System.out.println("New Salary: " + salary + " Tk");
+    }
+}
+
+
+
+
+
+
+
+// Question 4
+public class MobilePhone {      /* a2q4 */
+    public int cN = 0;
+    public String[] contactNames   = null;
+    public    int[] contactNumbers = null;
+
+    public void setContactCapacity(int n) {
+        this.contactNames   = new String[n];
+        this.contactNumbers = new    int[n];
+    }
+
+    public void details() {
+        System.out.println("Total Contacts: " + cN);
+        System.out.println("Contact List: ");
+            for (int i = 0; i < cN; i++) {
+                System.out.println(contactNames[i] + ":" + contactNumbers[i]);
+            }
+    }
+
+    public void addContact(String pName, int pNumber) 
+    {
+        if (cN < contactNames.length) {
+            contactNames  [cN] = pName;
+            contactNumbers[cN] = pNumber;
+            cN++;
+
+            System.out.println("The contact of " + pName + " is added.");
+        }
+        else {
+            System.out.println("Storage Full!!");
+        }
+    }
+
+    public void makeCall(int pNumber) {
+        int k = -1;
+        for (int i = 0; i < cN; i++) {
+            if (contactNumbers[i] == pNumber) {
+                k = i;
+                break;
+            }
+        }
+
+        if (k == -1)    System.out.println("Calling " + pNumber         + " . . .");
+        else            System.out.println("Calling " + contactNames[k] + " . . .");
+    }
+}

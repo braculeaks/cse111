@@ -1,0 +1,136 @@
+// CSE111, Section 16 [MAU]
+// Amitrakshar Biswas (1000058970)
+// Lab 1, February 17, 2026, Wednesday, 11a.m. (Ramadan Time: 10:30a.m.)
+
+// Assignment 1
+// Due February 24
+
+
+
+// Question 1
+import java.util.Scanner;
+
+public class a1q1 {
+    public static boolean IsPrime(int k) 
+    {
+        boolean isPrime = true;
+        for (int i = 2; i < k; i++) {
+            if (k%i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+
+        return isPrime;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int l = sc.nextInt();
+        int r = sc.nextInt();
+        int ans = 0;
+
+        if (l > r) {
+            int tmp = l;
+                l   = r;
+                r   = tmp;
+        }
+
+        for (int k = l+1; k < r; k++) {     // "between" = "not-inclusive"
+            if (IsPrime(k) == true) ans++;
+        }
+
+        System.out.println(
+            "There are " + ans + " prime numbers between " 
+                + l + " and " 
+                + r + "."
+            );
+    }
+}
+
+
+
+
+
+// Question 2
+import java.util.Scanner;
+
+public class a1q2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        
+        String s = sc.next();
+
+        for (int i = 0, len = s.length(); i < len; i++) 
+        {
+            char c = s.charAt(i);
+
+                 if (c == 'a') c = 'z';
+            else if (c == 'A') c = 'Z'; 
+            else               c = (char) (s.charAt(i) - 1);            
+            
+            System.out.print(c);
+        }
+        System.out.print('\n');
+    }
+}
+
+
+
+
+
+
+
+// Question 3
+import java.util.Scanner;
+
+public class a1q3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = 0;
+            System.out.print("N = ");
+            n = sc.nextInt();
+        
+        int    [] arr  = new int[n];
+        boolean[] done = new boolean[n];
+            for (int i = 0; i < n; i++) 
+            {
+                arr[i] = sc.nextInt();
+                done[i] = false;
+            }
+
+        for (int i = 0; i < n; i++) 
+        {
+            int x = arr[i];
+            if (done[i] == true) {continue;}
+            else {
+                int count = 1;
+                    done[i] = true;
+
+                for (int j = i+1; j < n; j++) {
+                    if (arr[j] == x) {
+                        count ++;
+                        done[j] = true;
+                    }
+                }
+
+                System.out.println(x + " - " + count + " times");
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+// Question 4
+public class CSECourse {
+    public String courseName = "Programming Language II";
+    public String courseCode = "CSE111";
+    public int credit = 3;
+}

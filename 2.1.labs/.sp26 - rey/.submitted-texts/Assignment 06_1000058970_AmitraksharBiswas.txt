@@ -1,0 +1,185 @@
+/* 
+    CSE111, Spring 2026
+    Section 16 [MAU]
+    Amitrakshar Biswas (1000058970)
+
+    Assignment 6
+    Due March 28
+*/
+
+
+
+
+
+
+
+// Question 1
+public class Cow extends Animal {       /* a6q1 */
+    String name;
+    String getName() {return name;}
+
+    Cow() {
+        System.out.println("The cow says hello!");
+    }
+
+    public void updateSound(String s) {
+        super.sound = s;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+// Question 2
+public class CheckingAccount extends Account {      /* a6q2 */
+    static int count = 0;
+
+    CheckingAccount() {
+        super(0.0);
+        count++;
+    }
+
+    CheckingAccount(double b) {
+        super(b);
+        count++;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+// Question 3
+public class Book extends Product {     /* a6q3 */
+    String isbn;
+    String publisher;
+    
+    Book(int id, String n, int p, String i, String pub) {
+        super(id, n, p);
+        isbn = i;
+        publisher = pub;
+    }
+
+    String printDetail() {
+        return super.getIdTitlePrice() + " ISBN: " + isbn + " Publisher: " + publisher;
+    }
+}
+
+class CD extends Product {
+    String band;
+    int duration;
+    String category;
+
+    CD(int id, String n, int p, String band, int d, String cat) {
+        super(id, n, p);
+        this.band = band;
+        this.duration = d;
+        this.category = cat;
+    }
+
+    String printDetail() {
+        return super.getIdTitlePrice() + "\n"
+        + "Band: " + band + " Duration: " + duration + " minutes Genre: " + category;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Question 4
+public class ComplexNumber extends RealNumber {     /* a6q4 */
+    public double iV;
+    ComplexNumber() {
+        super(1.0);
+        this.iV = 1.0;
+    }
+    ComplexNumber(double r, double i) {
+        super(r);
+        this.iV = i;
+    }
+    String details() {
+        return super.getReal() + "\n"
+            + "ImaginaryPart: " + iV;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Question 5
+public class CSEStudent extends Student         /* a6q5 */
+{
+    static int total = 0;
+    static String courses[] = {"CSE110", "CSE111", "CSE220", "CSE221"};
+
+    static void details() {
+        System.out.println("Total CSE Students: " + total);
+        System.out.println("Available Lab Based Courses: ");
+        System.out.println("CSE110 CSE111 CSE220 CSE221");
+    }
+
+    int find(String c) {
+        for (int i = 0; i < courses.length; i++) {
+            if (c.equals(courses[i])) {
+                return i;
+            }
+        }
+        return -1;
+    }
+    
+    void addLabBasedCourse(String c) {
+        int k = find(c);
+        if (k == -1) {
+            System.out.println("It is not a lab based course!");
+        }
+        else {
+            super.courses += c + " ";
+        }
+    }
+
+    CSEStudent(String n, int ag) {
+        super(n, ag);
+    }
+}

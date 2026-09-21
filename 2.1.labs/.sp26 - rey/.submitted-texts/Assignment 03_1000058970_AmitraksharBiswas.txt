@@ -1,0 +1,211 @@
+// CSE111, Section 16 [MAU]
+// Amitrakshar Biswas (1000058970)
+
+// Assignment 3
+// Due March 10
+
+
+
+// Question 1
+public class Toy {                  /* a3q1 */
+    public String name;
+    public int price;
+
+    Toy(String S, int p) {
+        this.name = S;
+        this.price = p;
+
+        System.out.println("A new toy has been made!");
+    }
+
+    void updatePrice(int p)     {this.price = p;}
+    void updateName(String S)   {
+        System.out.println("Changing old name: " + this.name);
+        this.name  = S;
+        System.out.println("new name: " + this.name);
+    }
+
+    void showPrice() {
+        System.out.println("price: " + this.price + " Taka");
+    }
+}
+
+
+
+
+
+
+// Question 2
+public class Cart {                         /* a3q2 */
+    public int id;
+    public double total = 0.0;
+    public double discount = 0.0;
+    public double total_discounted = 0.0;
+
+    public int e = 0;
+    public int e_max = 3;
+    public String[]  items = new String[3];
+    public double[] prices = new double[3];
+
+    void create_cart(int x) {
+        this.id = x;
+    }
+
+    void giveDiscount(double d) {
+        this.discount = d;
+    }
+
+    void addItem(double price, String S) {
+        addItem(S, price);
+    }
+
+    void addItem(String S, double price) {
+        if (e >= e_max) {
+            System.out.println("You already have 3 items on your cart");       
+        }
+        else {
+            items[e] = S;
+            prices[e] = price;
+            e++;
+            total += price;
+
+            System.out.println(S+" added to cart "+id);
+            System.out.println("You have "+e+" item(s) in your cart now");
+        }
+    }
+
+    void cartDetails() {
+        System.out.println("Your cart(c"+id+") :");
+        for (int i = 0; i < e; i++) {
+            System.out.println(items[i]+" - "+prices[i]);
+        }
+
+        this.total_discounted = total - (total*(discount/100));
+
+        System.out.println("Discount Applied: "+discount+"%");
+        System.out.println("Total price: "+total_discounted);
+    }
+}
+
+
+
+
+
+
+
+// Question 3
+public class Reader {                       /* a3q3 */
+    public String name = "New user";
+    public int capacity = 2;
+    public int b = 0;
+    public String[] reading = new String[2];
+
+    Reader(String name, int cap) {
+        this.name = name;
+        this.capacity = cap;
+        this.reading = new String[cap];
+
+        System.out.println("A new reader is created!");
+    }
+
+    Reader(String name) {
+        this(name, 2);
+    }
+
+    void readerInfo() {
+        System.out.println("Name: "+this.name);
+        System.out.println("Capacity: "+this.capacity);
+        System.out.println("Books:");
+        if (b == 0) {
+            System.out.println("No books added yet");
+        }
+        else {
+            for (int i = 0; i < b; i++) {
+                System.out.println("Book " + (i+1) + ": " + reading[i]);
+            }
+        }
+    }
+
+    void addBook(String S) {
+        if (b >= capacity) {
+            System.out.println("No more capacity");
+        }
+        else {
+            reading[b++] = S;
+        }
+    }
+
+    void updateCapacity(int x) {
+        String[] newArr = new String[x];
+
+        int i = 0;
+        while(true) {
+            if (i >= b) break;
+            if (i >= x) break;
+            newArr[i] = this.reading[i];
+            i++;
+        }
+        this.b = i;
+        this.capacity = x;
+        this.reading = newArr;
+
+        System.out.println("Capacity has changed to "+this.capacity);
+    }
+}
+
+
+
+
+
+
+
+// Question 4
+public class MoneyTracker {                 /* a3q4 */
+    public String name = null;
+    public double balance = 0.0;
+    public double last_income = 0.0;
+    public double last_expense = 0.0;
+
+    MoneyTracker() {
+        System.out.println("A new money tracker has been launched."); 
+    }
+
+    String info() {
+        String output = "";
+        output += "Name: " + this.name + "\n";
+        output += "Current Balance: " + this.balance;
+        return output;
+    }
+
+    void createTracker(String S) {
+        this.name = S;
+        this.balance = 1.0;
+    }
+
+    void income(int x) {
+        this.balance += x;
+        this.last_income = x;
+        System.out.println("Balance Updated!");
+    }
+
+    void expense(int x) {
+        if (x > balance) {
+            System.out.println("Not enough balance.");
+        }
+        else if (x == balance) {
+            this.balance = 0;
+            this.last_expense = x;
+            System.out.println("You're broke!");
+        }
+        else {
+            this.balance -= x;
+            this.last_expense = x;
+            System.out.println("Balance Updated!");
+        }
+    }
+
+    void showHistory() {
+        System.out.println("Last added: " + last_income);
+        System.out.println("Last spent: " + last_expense);
+    }
+}
