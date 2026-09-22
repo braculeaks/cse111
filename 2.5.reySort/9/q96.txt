@@ -1,0 +1,17 @@
+1. https://runestone.academy/ns/books/published/javads/oop_abstract_interfaces.html
+2. https://runestone.academy/ns/books/published/javajavajava/abstract-classes-interfacesand-polymorphism.html
+3. https://www.tutorialspoint.com/java/java_abstraction.htm
+4. https://www.cs.ou.edu/~fagg/classes/cs2334_f16/labs/
+5. https://www.cs.cornell.edu/courses/cs2110/2026sp/lectures/lec10/
+6. https://drive.google.com/drive/folders/1XoaIt0tqSHixOiDYPwdL89XweEva_cUh
+7. https://www.seas.upenn.edu/~cis120/archive/25fa/hw/hw09/
+8. https://math.hws.edu/eck/cs124/downloads/javanotes9-linked.pdf
+9. https://introcs.cs.princeton.edu/java/home/
+10. https://www3.cs.stonybrook.edu/~pfodor/courses/cse114.html
+11. https://www.cs.colostate.edu/~cs165/.Spring20/home_worksheets.php
+12. https://andrewcmyers.github.io/oodds/
+13. https://www.cs.cornell.edu/info/people/tt/Principled_Programming.html
+14. https://cse.iitkgp.ac.in/~dsamanta/joywithjava/
+15. https://www.cs.cornell.edu/courses/cs2110/2025sp/assignments/a2_handout.html
+16. https://www.amazon.com/Introduction-Programming-Structures-Comprehensive-Version/dp/0136520235
+17. https://www.cis.upenn.edu/~cis120/archive/19fa/

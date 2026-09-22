@@ -1,0 +1,87 @@
+echo "# swe202" >> README.md        # --- lagbena
+git init                            # --- [initialize] git starts doing smth, creates .git
+git add README.md                   # --- add = "start tracking"
+git add .                           # --- git will now "add"/"track" everything
+git commit -m "first commit"        # --- commit = "capture changes"
+git branch -M main                  # --- branch 
+git remote add origin https://github.com/ayiham-1012/swe202.git     # --- git doesn't know github
+git push -u origin main             # --- git push 1st time
+git push                            # --- git push later on    push = "upload"
+git clone                           # --- 1st time pull.
+git pull                            # --- pull = "download the update"
+
+
+
+
+
+# per PC 1 time
+git config --global user.email ayiham1012@gmail.com
+git config --global user.name ayiham-1012
+git config --global core.editor "code --wait"
+
+
+
+
+# okay
+git clone -b 57-Lamiya https://github.com/Zenhance/SWE-4202-24 swe24
+git switch 25-Nipun
+
+
+
+git init
+git add .
+git commit
+git branch -M main
+git remote add origin https://github.com/ayiham-1012/swe202.git
+git push -u origin main
+
+
+
+# From next on forward
+git add .
+git commit
+git push
+
+
+
+# When you don't wanna commit and make changes
+git reset
+git add .
+git status
+git commit
+
+
+# Nice ones
+git log
+git clone
+git pull
+
+
+
+
+# merging 
+git add .
+git commit
+git pull --no-rebase
+// Manually fix the merges
+git add .
+git commit -m "Manually fixed the merge conflics 💁‍♀️"
+
+
+
+# overwrite git pull without merging
+git reset --hard HEAD
+git clean -xdf (optional)
+git pull
+
+
+
+
+
+
+# merging under the hood
+0. lets say we start at a state, where the last commit was commit0
+1. PC1 makes a commit right after commit0 --> commitA
+2. PC2 makes a commit right after commit0 --> commitB
+3. then you merge these two different commits
+    - so uncommitted stuff cannot be merged 🤷‍♀️
